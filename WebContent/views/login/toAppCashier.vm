@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+	<script type="text/javascript" src="/static/js/jquery-2.0.2.min.js"></script>
+	<script>
+       $(function(){
+         $("#cashierFrom").submit();
+       });
+    </script>
+</head>
+<body>
+     <form id="cashierFrom" method="post" action="http://sct.nxin.com/cashier/initPaymentByPhone.action">
+		 <input type="hidden" name="userIdIn" value="634086739144001641"/>      ##收款Id
+		 <input type="hidden" name="ttype" value="3"/>							
+		 <input type="hidden" name="sellerName" value="你好"/>
+		 <input type="hidden" name="tsource" value="5"/>						##交易来源
+		 <input type="hidden" name="isComm" value="2"/>							##对公标志
+		 <input type="hidden" name="signmsg" value="406e6eb640b21798cf26d2e39f5c0e2b"/>
+		 <input type="hidden" name="operator" value="1198185"/>
+		 <input type="hidden" name="resulturl" value="http://zjs.t.nxin.com/mob/order/pig/loadOrderDetail.do?orderId=S16091316340001"/>
+		 <input type="hidden" name="productNumber" value="1"/>
+		 <input type="hidden" name="pptype" value="0"/>
+		 <input type="hidden" name="amount" value="1"/>
+		 <input type="hidden" name="orderNo" value="113"/>
+		 <input type="hidden" name="ppurp" value="111"/>
+		 <input type="hidden" name="times" value="201609131911"/>
+		 <input type="hidden" name="businessNo" value="duan000010"/>					##业务订单号
+		 <input type="hidden" name="sellerId" value="1253091"/>					
+		 <input type="hidden" name="userId" value="1253732"/>					##付款Id
+		 <input type="hidden" name="payType" value="NFB,SZD,QB,HYLDS,HK,ABCWG,XYF,QP,WXPUBNO"/>
+		 <input type="hidden" name="productName" value="111"/>
+		 <input type="hidden" name="productNumber" value="12"/>
+     </form>
+</body>
+</html>
