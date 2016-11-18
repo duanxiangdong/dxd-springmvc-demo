@@ -14,26 +14,27 @@
     </script>
 </head>
 <body>
-     <form id="cashierFrom" method="post" action="https://jr.nxin.com/payment/initPaymentByWeb.action">
-		 <input type="hidden" name="userIdIn" value="634086739144001641"/>      ##收款Id
-		 <input type="hidden" name="ttype" value="3"/>							
-		 <input type="hidden" name="sellerName" value="你好"/>
-		 <input type="hidden" name="tsource" value="14"/>						##交易来源
-		 <input type="hidden" name="isComm" value="2"/>							##对公标志
-		 <input type="hidden" name="signmsg" value="406e6eb640b21798cf26d2e39f5c0e2b"/>
-		 <input type="hidden" name="operator" value="1198185"/>
-		 <input type="hidden" name="resulturl" value="http://zjs.t.nxin.com/mob/order/pig/loadOrderDetail.do?orderId=S16091316340001"/>
-		 <input type="hidden" name="productNumber" value="1"/>
-		 <input type="hidden" name="pptype" value="0"/>
-		 <input type="hidden" name="amount" value="0.01"/>
-		 <input type="hidden" name="orderNo" value="113"/>
-		 <input type="hidden" name="ppurp" value="111"/>
-		 <input type="hidden" name="times" value="201609131911"/>
-		 <input type="hidden" name="businessNo" value="dd028"/>					##业务订单号
-		 <input type="hidden" name="sellerId" value="1253091"/>					
-		 <input type="hidden" name="userId" value="30618"/>		##1198186			##付款Id
-		 <input type="hidden" name="payType" value="NFB,SZD,QB,HYLDS,HK,ABCWG,XYF,QP,WX"/>
-		 <input type="hidden" name="productName" value="111"/>
+     <form id="cashierFrom" method="post" action="http://sct.nxin.com/payment/initPaymentByWeb.action">
+		 <input type="hidden" name="userIdIn" value="$!{userIdIn}"/>      				
+		 <input type="hidden" name="ttype" value="$!{ttype}"/>							
+		 <input type="hidden" name="sellerName" value="$!{sellerName}"/>
+		 <input type="hidden" name="tsource" value="$!{tsource}"/>							
+		 <input type="hidden" name="isComm" value="$!{isComm}"/>							
+		 <input type="hidden" name="signmsg" value="$!{signmsg}"/>
+		 <input type="hidden" name="operator" value="$!{operator}"/>
+		 <input type="hidden" name="resulturl" value="$!{resulturl}"/>
+		 <input type="hidden" name="productNumber" value="$!{productNumber}"/>
+		 <input type="hidden" name="pptype" value="$!{pptype}"/>
+		 <input type="hidden" name="amount" value="$!{amount}"/>
+		 <input type="hidden" name="orderNo" value="$!{orderNo}"/>
+		 <input type="hidden" name="ppurp" value="$!{ppurp}"/>
+		 <input type="hidden" name="times" value="$!{times}"/>
+		 <input type="hidden" name="businessNo" value="$!{businessNo}"/>					
+		 <input type="hidden" name="sellerId" value="$!{sellerId}"/>					
+		 <input type="hidden" name="userId" value="$!{userId}"/>
+		 <input type="hidden" name="payType" value="$!{payType}"/>
+		 <input type="hidden" name="productName" value="$!{productName}"/>
+		 <input type="hidden" name="shareData" value='$!{shareData}'/>
      </form>
 	 <input type="button"  value="去支付" onclick="pay()" style="width: 85px; height: 60px;" />	
 </body>

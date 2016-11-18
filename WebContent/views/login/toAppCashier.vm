@@ -25,13 +25,13 @@
 		 <input type="hidden" name="productNumber" value="1"/>
 		 <input type="hidden" name="pptype" value="0"/>
 		 <input type="hidden" name="amount" value="1"/>
-		 <input type="hidden" name="orderNo" value="113"/>
+		 <input type="hidden" name="orderNo" value="test000000003"/>
 		 <input type="hidden" name="ppurp" value="111"/>
 		 <input type="hidden" name="times" value="201609131911"/>
-		 <input type="hidden" name="businessNo" value="duan000010"/>					##业务订单号
+		 <input type="hidden" name="businessNo" value="test000000003"/>					##业务订单号
 		 <input type="hidden" name="sellerId" value="1253091"/>					
 		 <input type="hidden" name="userId" value="1253732"/>					##付款Id
-		 <input type="hidden" name="payType" value="NFB,SZD,QB,HYLDS,HK,ABCWG,XYF,QP,WXPUBNO"/>
+		 <input type="hidden" name="payType" value="NFB,SZD,QB,HYLDS,HK,ABCWG,XYF,QP,WXPUBNO,WX"/>
 		 <input type="hidden" name="productName" value="111"/>
 		 <input type="hidden" name="productNumber" value="12"/>
      </form>
